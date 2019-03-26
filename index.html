@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h3 id="datetime"></h3>
+				<h2>Интернет-магазин джинсовых курток</h2>
+			</header>
+			
+			<div class="shop">
+				<div class="products" id="MasBy[0]" name="MasBy[0]">
+					<img src="img/hmprod (2).jfif" alt="">
+					<h3>Куртка 1</h3>
+					<p id="price1">Цена 1990 руб</p>
+					<button 
+					onClick=addBy("MasBy["+0+"]")>Купить</button>	
+				</div>
+				<div class="products" id="MasBy[1]" name="MasBy[1]">
+					<img src="img/hmprod (1).jfif" alt="">
+					<h3>Куртка 2</h3>
+					<p id="price2">Цена 1965 руб</p>
+					<button onClick=addBy("MasBy["+1+"]")>Купить</button>
+				</div>
+				<div class="products" id="MasBy[2]" name="MasBy[2]">
+					<img src="img/hmprod.jfif" alt="">
+					<h3>Куртка 3</h3>
+					<p id="price3">Цена 1963 руб</p>
+					<button 
+					onClick=addBy("MasBy["+2+"]")>Купить</button>	
+				</div>
+			</div>
+
+			<div class="zakaz" id="itog">
+				<h2>Заказ</h2>
+				<ul id="checks"></ul>
+				<p>Итого: <span id="itogo"></span></p>
+				<p>Итого co скидкой: <span id="itogo2"></span></p>
+			</div>
+
+			<div class="promokod">
+				<label for="promokod">Введите промокод</label>
+				<input pattern=[] type="text" name="kodInput" 
+				id="kodInput">
+				<button  class="btn btn-green" onClick='Order("kodInput")'>Сформировать заказ</button>
+			</div>
+		</div>
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>
